@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main() {
+	int n2;
+	int n3;
+	int num;
+	n3 = 0;
+	printf("Ingrese un numero\n");
+	scanf("%i", &num);
+	for (n2=1; n2<=num; ++n2) {
+		if ((num%n2)==0) {
+			n3 = n3+1;
+		}
+	}
+	if ((n3==2)) {
+		printf("El numero %i Si es primo\n", num);
+	} else {
+		printf("El numero %i No es primo\n", num);
+	}
+	return 0;
+}
