@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main() {
+	int n2;
+	int num;
+	printf("Ingrese un numero\n");
+	scanf("%i", &num);
+	n2 = (int) num%2;
+	if (n2==0) {
+		printf("%i Es par\n", num);
+	} else {
+		printf("%i Es impar\n", num);
+	}
+	return 0;
+}
