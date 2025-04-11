@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main() {
+	int n2;
+	int n3;
+	int n4;
+	int num;
+	printf("ingrese un numero de 4 digitos\n");
+	scanf("%i", &num);
+	n2 = num;
+	n4 = 0;
+	while (n2>0) {
+		n3 = n2%10;
+		n2 = (n2-n3)/10;
+		n4 = (n4*10)+n3;
+	}
+	printf("Este es el numero %i\n", num);
+	printf("Este es el numero al revés %i\n", n4);
+	return 0;
+}
